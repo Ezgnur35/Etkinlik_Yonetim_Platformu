@@ -30,7 +30,8 @@ PHP tarafında session yönetimi ve rol bazlı yetkilendirmeyi bu projede ilk ke
 5. `etkinlik_db` adında yeni bir veritabanı oluştur, karakter seti olarak `utf8_turkish_ci` seç
 6. Oluşturulan veritabanında SQL sekmesine tıkla, aşağıdaki sorguları çalıştır:
 
-```sql
+sql
+
 CREATE TABLE kullanicilar (
     id INT AUTO_INCREMENT PRIMARY KEY,
     isim VARCHAR(100) NOT NULL,
@@ -60,7 +61,7 @@ CREATE TABLE kayitlar (
     FOREIGN KEY (kullanici_id) REFERENCES kullanicilar(id),
     FOREIGN KEY (etkinlik_id) REFERENCES etkinlikler(id)
 );
-```
+
 
 7. Tarayıcıda kayıt sayfasını aç ve hesap oluştur:
 http://localhost/Etkinlik_Yonetim_Platformu/kayit.php
